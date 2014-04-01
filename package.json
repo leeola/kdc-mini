@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "name": "kdc-mini",
+  "description": "A koding app compiler for any build system you want.",
+  "author": "leeolayvar <leeolayvar@gmail.com> (http://leeo.la/yvar)",
+  "constributors": [
+    {
+      "name": "Lee Olayvar",
+      "email": "leeolayvar@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "koding",
+    "app",
+    "compiler"
+  ],
+  "scripts": {
+    "build": "./node_modules/gulp/bin/gulp.js --require coffee-script/register build"
+    "prepublish": "./node_modules/gulp/bin/gulp.js --require coffee-script/register build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leeolayvar/kdc-mini.git"
+  },
+  "bugs": {
+    "url": "http://github.com/leeolayvar/kdc-mini/issues"
+  },
+  "main": "./build/bin/kdc-mini.js",
+  "bin": {
+    "kdc": "./build/bin/kdc-mini.js",
+    "kdc-plus": "./build/bin/kdc-mini.js"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.7.1",
+    "gulp": "~3.6.0",
+    "gulp-coffee": "~1.4.1",
+    "gulp-insert": "~0.2.0"
+  },
+  "peerDependencies": {
+    "kdc": "*"
+  }
+}
