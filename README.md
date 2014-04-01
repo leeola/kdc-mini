@@ -1,7 +1,7 @@
 
 # KDC Mini
 
-KDC Mini is a simple build tool for Koding Apps.
+KDC Mini is a simple build tool for [Koding][0] Apps.
 
 ## Why
 
@@ -46,3 +46,6 @@ defined.
 
 In the future i may add some variables from the manifest, such as a files list
 or resource list, but for now we're keeping it very very light.
+
+
+[0]: https://koding.com
