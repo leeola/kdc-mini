@@ -16,7 +16,7 @@
     "compiler"
   ],
   "scripts": {
-    "build": "./node_modules/gulp/bin/gulp.js --require coffee-script/register build"
+    "build": "./node_modules/gulp/bin/gulp.js --require coffee-script/register build",
     "prepublish": "./node_modules/gulp/bin/gulp.js --require coffee-script/register build"
   },
   "repository": {
