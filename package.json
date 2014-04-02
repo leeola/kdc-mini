@@ -1,6 +1,6 @@
 {
   "name": "kdc-mini",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A koding app compiler for any build system you want.",
   "author": "leeolayvar <leeolayvar@gmail.com> (http://leeo.la/yvar)",
   "constributors": [
@@ -29,7 +29,7 @@
   "main": "./build/bin/kdc-mini.js",
   "bin": {
     "kdc": "./build/bin/kdc-mini.js",
-    "kdc-plus": "./build/bin/kdc-mini.js"
+    "kdc-mini": "./build/bin/kdc-mini.js"
   },
   "devDependencies": {
     "coffee-script": "~1.7.1",
