@@ -37,7 +37,7 @@
     "gulp-coffee": "~1.4.1",
     "gulp-insert": "~0.2.0"
   },
-  "peerDependencies": {
-    "kdc": "*"
+  "dependencies": {
+    "kdc": "~0.1.3"
   }
 }
