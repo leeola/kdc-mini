@@ -1,4 +1,4 @@
-# 0.1.2 / 2014-04-01
+# 0.1.3 / 2014-04-01
 
 - The build dir is no longer ignored by npm.
 
