@@ -1,6 +1,6 @@
 {
-  "private": true,
   "name": "kdc-mini",
+  "version": "0.1.0",
   "description": "A koding app compiler for any build system you want.",
   "author": "leeolayvar <leeolayvar@gmail.com> (http://leeo.la/yvar)",
   "constributors": [
