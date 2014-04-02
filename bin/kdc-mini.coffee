@@ -44,15 +44,16 @@ loadManifest = (appPath, opts={}, callback=->) ->
 # - log: A function which will be used to print on, if any printing from this
 #     process even occurs. Default: `console.error`, which is `STDERR`
 exec = (argv, log=console.error) ->
-  appPath  = path.join argv[2] ? '.'
+  appPath  = path.join argv[2] ? process.cwd()
   loadManifest appPath, (err, manifest) ->
     if err?
       log err
       return process.exit 1
 
-    build = manifest.build ? "./node_modules/kdc/bin/kdc #{appPath}"
-    args  = build.split ' '
-    bin   = args.shift()
+    kdcPath = path.join path.dirname(require.resolve 'kdc'), 'bin', 'kdc'
+    build   = manifest.build ? "#{kdcPath} #{appPath}"
+    args    = build.split ' '
+    bin     = args.shift()
 
     # Create our process
     proc  = spawn bin, args, cwd: appPath
