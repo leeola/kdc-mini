@@ -3,6 +3,11 @@
 
 KDC Mini is a simple build tool for [Koding][0] Apps.
 
+## Installation
+
+- `sudo npm uninstall -g kdc`
+- `sudo npm install -g kdc-mini`
+
 ## Why
 
 Koding itself calls the command `kdc ~/Applications/<appName>` to build your
